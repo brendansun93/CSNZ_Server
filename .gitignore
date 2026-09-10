@@ -1,22 +1,57 @@
-﻿# msvc
-src/Debug
-src/Release
-src/ReleasePublic
-src/.vs
-.vs
+# ==========================================
+# Visual Studio & IDEs
+# ==========================================
+.vs/
+src/.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
 
-# cmake
-src/out
+# ==========================================
+# CMake & Build Artifacts
+# ==========================================
+build/
+src/build/
+out/
+src/out/
 src/CMakeSettings.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 
-# srv bin files
+# ==========================================
+# Compiler Intermediate & Output Files
+# ==========================================
+*.obj
+*.o
+*.lib
+*.a
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.tlog
+*.lastbuildstate
+*.recipe
+*.ipch
+
+# ==========================================
+# Server Binaries & Runtime Logs / DB
+# ==========================================
 bin/*.exe
 bin/*.manifest
 bin/*.ilk
 bin/*.pdb
 bin/*.log
 bin/*.db3
-bin/Logs
-bin/platforms
+bin/Release/
+bin/Debug/
+bin/Logs/
+bin/platforms/
 
-Releases
+# Releases output
+Releases/

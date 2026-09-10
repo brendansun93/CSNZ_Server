@@ -10,6 +10,7 @@ add_subdirectory(wolfssl)
 target_compile_definitions(wolfssl PRIVATE WOLFSSL_ALLOW_RC4=1)
 
 if (SERVER_DBSQLITE)
+	set(SQLITECPP_RUN_CPPLINT OFF CACHE BOOL "Run cpplint.py" FORCE)
 	set(SQLITECPP_USE_STATIC_RUNTIME OFF CACHE BOOL "Use MSVC static runtime (default for internal googletest).")
 	add_subdirectory(SQLiteCpp)
 endif()

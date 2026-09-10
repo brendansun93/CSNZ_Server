@@ -12,7 +12,7 @@
 	"AllowedLauncherVersion": 67,
 	"MaxRegistrationsPerIP": 3,
 	"SSL": false,
-	"Crypt": false,
+	"Crypt": true,
 	"MainMenuSkinEvent": 0,
 	"BanListMaxSize": 300,
 	"Metadata": {

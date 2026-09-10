@@ -8,6 +8,11 @@ option(SERVER_PUBLIC "Public build" OFF)
 option(SERVER_PROTECTION "Enable protection" OFF)
 option(SERVER_DBSQLITE "SQLite database" ON)
 option(SERVER_DB_PROXY "Proxy database" OFF)
+option(SERVER_BUILD_TESTS "Build tests" OFF)
+
+if (MSVC)
+	add_compile_options(/utf-8)
+endif()
 
 add_subdirectory(thirdparty)
 add_subdirectory(net)
@@ -16,8 +21,9 @@ if (SERVER_USE_GUI)
 	add_subdirectory(GUI)
 endif()
 
-# if test build enabled
-add_subdirectory(test)
+if (SERVER_BUILD_TESTS)
+	add_subdirectory(test)
+endif()
 
 add_executable(PROJECTNAME)
 
@@ -96,7 +102,11 @@ target_include_directories(PROJECTNAME PUBLIC
 	"thirdparty/rapidcsv/src"
 )
 
-target_precompile_headers(PROJECTNAME PRIVATE main.h)
+if (MSVC)
+	target_compile_options(PROJECTNAME PRIVATE /FI"main.h")
+else()
+	target_compile_options(PROJECTNAME PRIVATE -include main.h)
+endif()
 
 if (SERVER_PROTECTION)
 	target_compile_definitions(PROJECTNAME PRIVATE PROTECTION)
