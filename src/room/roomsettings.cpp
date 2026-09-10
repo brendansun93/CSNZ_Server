@@ -1,4 +1,4 @@
-﻿#include "roomsettings.h"
+#include "roomsettings.h"
 #include "definitions.h"
 #include "manager/userdatabase.h"
 
@@ -49,6 +49,15 @@ CRoomSettings::CRoomSettings(Buffer& inPacket) // unfinished
 	}
 	if (lowFlag & ROOM_LOW_GAMEMODEID) {
 		gameModeId = inPacket.readUInt8();
+		if (gameModeId == 24)
+		{
+			gameModeId = 8;
+			friendlyBots = 9;
+			enemyBots = 0;
+			botAdd = 1;
+			botBalance = 1;
+			lowMidFlag |= ROOM_LOWMID_BOT;
+		}
 	}
 	if (lowFlag & ROOM_LOW_MAPID) {
 		mapId = inPacket.readUInt16_LE();
@@ -809,6 +818,8 @@ int CRoomSettings::GetDefaultFriendlyBots(int gameModeId)
 			friendlyBots = 4;
 			break;
 		case 24:
+			friendlyBots = 9;
+			break;
 		case 57:
 			friendlyBots = 5;
 			break;
@@ -837,6 +848,8 @@ int CRoomSettings::GetDefaultEnemyBots(int gameModeId)
 			enemyBots = 5;
 			break;
 		case 24:
+			enemyBots = 0;
+			break;
 		case 57:
 			enemyBots = 6;
 			break;
@@ -1209,6 +1222,10 @@ void CRoomSettings::LoadFamilyBattleSettings(int gameModeId)
 
 void CRoomSettings::LoadDefaultSettings(int gameModeId, int mapId)
 {
+	bool isMode24 = (gameModeId == 24);
+	if (gameModeId == 24)
+		gameModeId = 8;
+
 	lowFlag = ROOM_LOW_ALL;
 	lowMidFlag = ROOM_LOWMID_ALL;
 	highMidFlag = ROOM_HIGHMID_ALL;
@@ -1251,10 +1268,21 @@ void CRoomSettings::LoadDefaultSettings(int gameModeId, int mapId)
 	unk38 = 0;
 	c4Timer = 0;
 	botDifficulty = 0;
-	friendlyBots = GetDefaultFriendlyBots(gameModeId);
-	enemyBots = GetDefaultEnemyBots(gameModeId);
-	botBalance = GetDefaultBotAdd(gameModeId);
-	botAdd = GetDefaultBotAdd(gameModeId);
+	if (isMode24)
+	{
+		friendlyBots = 9;
+		enemyBots = 0;
+		botBalance = 1;
+		botAdd = 1;
+		lowMidFlag |= ROOM_LOWMID_BOT;
+	}
+	else
+	{
+		friendlyBots = GetDefaultFriendlyBots(gameModeId);
+		enemyBots = GetDefaultEnemyBots(gameModeId);
+		botBalance = GetDefaultBotAdd(gameModeId);
+		botAdd = GetDefaultBotAdd(gameModeId);
+	}
 	kdRule = 0;
 	startingCash = GetDefaultStartingCash(gameModeId);
 	movingShot = 0;
@@ -1476,6 +1504,10 @@ bool CRoomSettings::ParseSlotDetails(std::string voxel_id)
 
 void CRoomSettings::LoadNewSettings(int gameModeId, int mapId, IUser* user)
 {
+	bool isMode24 = (gameModeId == 24);
+	if (gameModeId == 24)
+		gameModeId = 8;
+
 	if (g_pServerConfig->room.validateSettings)
 	{
 		if (lowFlag & ROOM_LOW_UNK)
@@ -1646,10 +1678,20 @@ void CRoomSettings::LoadNewSettings(int gameModeId, int mapId, IUser* user)
 
 		lowMidFlag |= ROOM_LOWMID_BOT;
 		botDifficulty = 0;
-		friendlyBots = GetDefaultFriendlyBots(gameModeId);
-		enemyBots = GetDefaultEnemyBots(gameModeId);
-		botBalance = GetDefaultBotAdd(gameModeId);
-		botAdd = GetDefaultBotAdd(gameModeId);
+		if (isMode24)
+		{
+			friendlyBots = 9;
+			enemyBots = 0;
+			botBalance = 1;
+			botAdd = 1;
+		}
+		else
+		{
+			friendlyBots = GetDefaultFriendlyBots(gameModeId);
+			enemyBots = GetDefaultEnemyBots(gameModeId);
+			botBalance = GetDefaultBotAdd(gameModeId);
+			botAdd = GetDefaultBotAdd(gameModeId);
+		}
 
 		lowMidFlag |= ROOM_LOWMID_KDRULE;
 		kdRule = 0;
@@ -1853,12 +1895,12 @@ void CRoomSettings::LoadNewSettings(int gameModeId, int mapId, IUser* user)
 
 			if (lowMidFlag & ROOM_LOWMID_BOT)
 			{
-				if (!GetDefaultBotAdd(gameModeId))
+				if (!GetDefaultBotAdd(gameModeId) && !(gameModeId == 8 && friendlyBots > 0))
 				{
 					Logger().Warn("User '%s' tried to update a room\'s settings with gameModeId that doesn't allow bots, gameModeId: %d\n", user->GetLogName(), gameModeId);
 					lowMidFlag &= ~ROOM_LOWMID_BOT;
 				}
-				else if (gameModeId == 3 || gameModeId == 4 || gameModeId == 5 || gameModeId == 24)
+				else if (gameModeId == 3 || gameModeId == 4 || gameModeId == 5 || gameModeId == 24 || (gameModeId == 8 && friendlyBots > 0))
 				{
 					if (botDifficulty > 7)
 						botDifficulty = 7;
@@ -1866,7 +1908,7 @@ void CRoomSettings::LoadNewSettings(int gameModeId, int mapId, IUser* user)
 					if (friendlyBots > 15)
 						friendlyBots = 15;
 
-					if (enemyBots < 1)
+					if (enemyBots < 1 && gameModeId != 8 && gameModeId != 24)
 						enemyBots = 1;
 
 					if (enemyBots > 16)
