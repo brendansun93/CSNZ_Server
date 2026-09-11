@@ -22,10 +22,6 @@
 				"Count": 1,
 				"Duration": 3
 			},
-			"173": {
-				"Count": 1,
-				"Duration": 0
-			},
 			"258": {
 				"Count": 5,
 				"Duration": 0
@@ -50,7 +46,29 @@
 				"Count": 1,
 				"Duration": 3
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 1,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 1,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 1,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 1,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1002": {
 		"Title": "LEVEL4_GIFTBOX_TITLE",
@@ -74,10 +92,6 @@
 				"Count": 1,
 				"Duration": 3
 			},
-			"173": {
-				"Count": 3,
-				"Duration": 0
-			},
 			"24": {
 				"Count": 1,
 				"Duration": 3
@@ -90,7 +104,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 3,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 3,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 3,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 3,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1003": {
 		"Title": "LEVEL6_GIFTBOX_TITLE",
@@ -113,10 +149,6 @@
 			"158": {
 				"Count": 1,
 				"Duration": 7
-			},
-			"173": {
-				"Count": 5,
-				"Duration": 0
 			},
 			"18": {
 				"Count": 1,
@@ -146,7 +178,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 5,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 5,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 5,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 5,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1004": {
 		"Title": "LEVEL8_GIFTBOX_TITLE",
@@ -165,10 +219,6 @@
 			"15": {
 				"Count": 1,
 				"Duration": 10
-			},
-			"173": {
-				"Count": 10,
-				"Duration": 0
 			},
 			"175": {
 				"Count": 1,
@@ -210,7 +260,29 @@
 				"Count": 1,
 				"Duration": 7
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 10,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 10,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 10,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 10,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1005": {
 		"Title": "LEVEL11_GIFTBOX_TITLE",
@@ -238,10 +310,6 @@
 				"Count": 1,
 				"Duration": 10
 			},
-			"173": {
-				"Count": 15,
-				"Duration": 0
-			},
 			"187": {
 				"Count": 1,
 				"Duration": 10
@@ -262,7 +330,29 @@
 				"Count": 1,
 				"Duration": 10
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 15,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 15,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 15,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 15,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1006": {
 		"Title": "LEVEL14_GIFTBOX_TITLE",
@@ -281,10 +371,6 @@
 			"149": {
 				"Count": 1,
 				"Duration": 10
-			},
-			"173": {
-				"Count": 20,
-				"Duration": 0
 			},
 			"197": {
 				"Count": 1,
@@ -306,7 +392,29 @@
 				"Count": 1,
 				"Duration": 10
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 20,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 20,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 20,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 20,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1007": {
 		"Title": "LEVEL18_GIFTBOX_TITLE",
@@ -320,10 +428,6 @@
 			},
 			"1031": {
 				"Count": 2,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 25,
 				"Duration": 0
 			},
 			"242": {
@@ -358,7 +462,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 25,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 25,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 25,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 25,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1008": {
 		"Title": "LEVEL23_GIFTBOX_TITLE",
@@ -372,10 +498,6 @@
 			},
 			"1031": {
 				"Count": 2,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 30,
 				"Duration": 0
 			},
 			"259": {
@@ -402,7 +524,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 30,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 30,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 30,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 30,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1016": {
 		"Title": "LEVEL28_GIFTBOX_TITLE",
@@ -425,10 +569,6 @@
 			"164": {
 				"Count": 1,
 				"Duration": 30
-			},
-			"173": {
-				"Count": 35,
-				"Duration": 0
 			},
 			"175": {
 				"Count": 1,
@@ -458,7 +598,29 @@
 				"Count": 1,
 				"Duration": -1
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 35,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 35,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 35,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 35,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1017": {
 		"Title": "LEVEL33_GIFTBOX_TITLE",
@@ -472,10 +634,6 @@
 			},
 			"1031": {
 				"Count": 3,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 40,
 				"Duration": 0
 			},
 			"259": {
@@ -502,7 +660,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 40,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 40,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 40,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 40,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1018": {
 		"Title": "LEVEL38_GIFTBOX_TITLE",
@@ -516,10 +696,6 @@
 			},
 			"1031": {
 				"Count": 3,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 45,
 				"Duration": 0
 			},
 			"259": {
@@ -554,7 +730,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 45,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 45,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 45,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 45,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1019": {
 		"Title": "LEVEL43_GIFTBOX_TITLE",
@@ -568,10 +766,6 @@
 			},
 			"1031": {
 				"Count": 3,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 50,
 				"Duration": 0
 			},
 			"246": {
@@ -614,7 +808,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 50,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 50,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 50,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 50,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1020": {
 		"Title": "LEVEL48_GIFTBOX_TITLE",
@@ -628,10 +844,6 @@
 			},
 			"1032": {
 				"Count": 3,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 55,
 				"Duration": 0
 			},
 			"253": {
@@ -666,7 +878,29 @@
 				"Count": 1,
 				"Duration": 30
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 55,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 55,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 55,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 55,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1021": {
 		"Title": "LEVEL54_GIFTBOX_TITLE",
@@ -694,10 +928,6 @@
 				"Count": 1,
 				"Duration": 30
 			},
-			"173": {
-				"Count": 60,
-				"Duration": 0
-			},
 			"259": {
 				"Count": 30,
 				"Duration": 0
@@ -722,7 +952,29 @@
 				"Count": 1,
 				"Duration": -1
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 60,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 60,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 60,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 60,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1022": {
 		"Title": "LEVEL60_GIFTBOX_TITLE",
@@ -736,10 +988,6 @@
 			},
 			"1032": {
 				"Count": 3,
-				"Duration": 0
-			},
-			"173": {
-				"Count": 65,
 				"Duration": 0
 			},
 			"259": {
@@ -766,7 +1014,29 @@
 				"Count": 1,
 				"Duration": -1
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 65,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 65,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 65,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 65,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1023": {
 		"Title": "LEVEL66_GIFTBOX_TITLE",
@@ -785,10 +1055,6 @@
 			"160": {
 				"Count": 1,
 				"Duration": -1
-			},
-			"173": {
-				"Count": 70,
-				"Duration": 0
 			},
 			"212": {
 				"Count": 1,
@@ -818,7 +1084,29 @@
 				"Count": 1,
 				"Duration": -1
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 70,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 70,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 70,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 70,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1024": {
 		"Title": "LEVEL72_GIFTBOX_TITLE",
@@ -841,10 +1129,6 @@
 			"138": {
 				"Count": 1,
 				"Duration": 100
-			},
-			"173": {
-				"Count": 72,
-				"Duration": 0
 			},
 			"245": {
 				"Count": 1,
@@ -894,7 +1178,29 @@
 				"Count": 1,
 				"Duration": -1
 			}
-		}
+		},
+		"RandomItems": [
+			{
+				"100": {
+					"8292": {
+						"Count": 72,
+						"Duration": 0
+					},
+					"8308": {
+						"Count": 72,
+						"Duration": 0
+					},
+					"8310": {
+						"Count": 72,
+						"Duration": 0
+					},
+					"8311": {
+						"Count": 72,
+						"Duration": 0
+					}
+				}
+			}
+		]
 	},
 	"1027": {
 		"Title": "ExpCoupon_TITLE",
@@ -1094,68 +1400,109 @@
 			}
 		}
 	},
-	// Zombie Scenario bonus chest reward
-	"3000": { // Normal (Regular, Light, Heavy, Voodoo, Psycho, Sting Finger, Venom Guard)
-		"Points": [ 500 ]
+	"3000": {
+		"Points": [
+			500
+		]
 	},
-	"3001": { // Medium (Juggernaut, Deimos, Ganymede)
-		"Points": [ 1500 ] 
+	"3001": {
+		"Points": [
+			1500
+		]
 	},
-	"3002": { // Boss
-		"Points": [ 2500 ] 
+	"3002": {
+		"Points": [
+			2500
+		]
 	},
-	"3003": { // Normal Hard
-		"Points": [ 1000 ] 
+	"3003": {
+		"Points": [
+			1000
+		]
 	},
-	"3004": { // Medium Hard
-		"Points": [ 3000 ] 
+	"3004": {
+		"Points": [
+			3000
+		]
 	},
-	"3005": { // Boss Hard
-		"Points": [ 5000 ] 
+	"3005": {
+		"Points": [
+			5000
+		]
 	},
-	"3007": { // Normal Easy
-		"Points": [ 250 ] 
+	"3007": {
+		"Points": [
+			250
+		]
 	},
-	"3008": { // Medium Easy
-		"Points": [ 750 ] 
+	"3008": {
+		"Points": [
+			750
+		]
 	},
-	"3009": { // Boss Easy
-		"Points": [ 1250 ] 
+	"3009": {
+		"Points": [
+			1250
+		]
 	},
-	"3010": { // Human Normal
-		"Points": [ 500 ] 
+	"3010": {
+		"Points": [
+			500
+		]
 	},
-	"3011": { // Human Medium
-		"Points": [ 1500 ] 
+	"3011": {
+		"Points": [
+			1500
+		]
 	},
-	"3012": { // Human Boss
-		"Points": [ 2500 ] 
+	"3012": {
+		"Points": [
+			2500
+		]
 	},
-	"3013": { // Human Trooper
-		"Points": [ 500 ] 
+	"3013": {
+		"Points": [
+			500
+		]
 	},
-	"3014": { // Human Ghost
-		"Points": [ 550 ] 
+	"3014": {
+		"Points": [
+			550
+		]
 	},
-	"3015": { // Human Lancer
-		"Points": [ 600 ] 
+	"3015": {
+		"Points": [
+			600
+		]
 	},
-	"3016": { // Human Titan
-		"Points": [ 650 ] 
+	"3016": {
+		"Points": [
+			650
+		]
 	},
-	"3017": { // Juggernaut
-		"Points": [ 3000 ] 
+	"3017": {
+		"Points": [
+			3000
+		]
 	},
-	"3018": { // Siege Type Deimos
-		"Points": [ 3000 ]
+	"3018": {
+		"Points": [
+			3000
+		]
 	},
-	"3019": { // Phobos
-		"Points": [ 3000 ] 
+	"3019": {
+		"Points": [
+			3000
+		]
 	},
-	"3020": { // Siege Type Phobos
-		"Points": [ 3000 ] 
+	"3020": {
+		"Points": [
+			3000
+		]
 	},
-	"3021": { // Oberon
-		"Points": [ 3000 ] 
+	"3021": {
+		"Points": [
+			3000
+		]
 	}
 }
